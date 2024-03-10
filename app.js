@@ -502,7 +502,7 @@ async function big() {
                                                                                                  "https://www.smartprix.com/mobile_headphones/audio_technica-crossbeats-govo-croma-motorola-infinity-intex-foxin-gionee-brand"]
     const scrapedDataArray = [];
     console.log(categories.length + " " + categories_url.length)
-    for (let x = 0; x < 6; x++) {
+    for (let x = 0; x < categories_url.length; x++) {
         const scrapedData = await scrapeDataFromURL(categories_url[x], categories[x]);
         console.log(scrapedData)
         for (var k = 0; k < scrapedData.length; k++) {
